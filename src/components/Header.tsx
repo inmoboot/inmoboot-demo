@@ -12,9 +12,9 @@ const Header = () => {
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">
+            <a href="/" className="text-foreground hover:text-primary transition-colors">Inicio</a>
             <a href="#propiedades" className="text-foreground hover:text-primary transition-colors">Propiedades</a>
-            <a href="#servicios" className="text-foreground hover:text-primary transition-colors">Servicios</a>
-            <a href="#contacto" className="text-foreground hover:text-primary transition-colors">Contacto</a>
+            <a href="/contacto" className="text-foreground hover:text-primary transition-colors">Contacto</a>
           </nav>
           
           <div className="flex items-center space-x-4">
@@ -28,7 +28,7 @@ const Header = () => {
                 <span>Santa Pola</span>
               </div>
             </div>
-            <Button variant="outline">Contactar</Button>
+            <Button variant="outline" onClick={() => window.location.href = '/contacto'}>Contactar</Button>
           </div>
         </div>
       </div>
